@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="CharUtils.fs"/>
+    <Compile Include="Grid.fs" />
+    <Compile Include= "Fileopener.fs" />
+    <Compile Include="Problems/Day2.fs"/>
+    <Compile Include="Problems/Day3.fs"/>
+    <Compile Include="Problems/Day4.fs"/>
+    <Compile Include="Problems/Day5.fs"/>
+    <Compile Include="Problems/Day6.fs"/>
+    <Compile Include="Problems/Day7.fs"/>
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+</Project>
