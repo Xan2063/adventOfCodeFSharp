@@ -1,6 +1,6 @@
 ﻿open System
 // Learn more about F# at http://fsharp.org
-open Day7
+open Day8
 
 
 [<EntryPoint>]
