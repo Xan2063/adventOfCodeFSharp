@@ -1,21 +1,13 @@
 module Day7
 open System.IO
-open System.Text.RegularExpressions
-open System
-
-let FilterTextInBrackets (input:string) =
-    let regex = new Regex(@"\[[^]]*\]")
-    regex.Replace(input, "")
-    
-    // let result = Regex.Match (input, @"\[[^]]*\]")
-    // result.Value
 
 let ContainsABBA input = 
     input
     |>Seq.windowed 4
     |>Seq.map (fun window -> match(window) with
     | ([|x;y;a;b|]) -> x=b&&y=a&&x<>y
-    | _ -> false)|>Seq.reduce (||)
+    | _ -> false)
+    |>Seq.reduce (||)
     
 let GetABATuples (input:string)=
     input
