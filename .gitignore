@@ -131,7 +131,6 @@ flycheck_*.el
 .projectile
 
 ### VisualStudioCode ###
-.vscode
 
 
 
